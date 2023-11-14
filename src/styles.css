@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+/*styles.css*/
+  body {
+    /*background: url('/assets/yytf\ \(2\).jpeg');*/
+    background: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }

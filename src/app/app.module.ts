@@ -1,16 +1,48 @@
+//app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { QueryEntryComponent } from './query-entry/query-entry.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SuccessDialogComponent } from './success-dialog/success-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
+import { NetworkComponent } from './network/network.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { EventsComponent } from './events/events.component';
+import { LogoutComponent } from './logout/logout.component';
+import { FAQsComponent } from './faqs/faqs.component';
+import { QueryService } from './query.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QueryEntryComponent,
+    SuccessDialogComponent,
+    HeaderComponent,
+    HomeComponent,
+    ProfileComponent,
+    NetworkComponent,
+    JobsComponent,
+    EventsComponent,
+    LogoutComponent,
+    FAQsComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    HttpClientModule
+    
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
